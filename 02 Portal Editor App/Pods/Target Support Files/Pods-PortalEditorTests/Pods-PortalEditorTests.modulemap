@@ -1,0 +1,6 @@
+framework module Pods_PortalEditorTests {
+  umbrella header "Pods-PortalEditorTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

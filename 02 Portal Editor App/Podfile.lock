@@ -1,0 +1,23 @@
+PODS:
+  - Contentful (5.0.5):
+    - Contentful/ImageOptions (= 5.0.5)
+  - Contentful/ImageOptions (5.0.5)
+  - SwiftLint (0.31.0)
+
+DEPENDENCIES:
+  - Contentful (~> 5.0.0)
+  - SwiftLint
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - SwiftLint
+  trunk:
+    - Contentful
+
+SPEC CHECKSUMS:
+  Contentful: 625b804580b7cd9c18d0b86c12730e330193f728
+  SwiftLint: 7a0227733d786395817373b2d0ca799fd0093ff3
+
+PODFILE CHECKSUM: 3d32e0b7ac5f51a556c1ca9d7b19b23bd7bf93bd
+
+COCOAPODS: 1.9.1

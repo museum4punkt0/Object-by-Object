@@ -1,0 +1,2 @@
+${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Contentful.framework
+${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ContentfulPersistence.framework

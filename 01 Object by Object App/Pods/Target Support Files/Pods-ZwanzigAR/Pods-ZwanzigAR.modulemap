@@ -1,0 +1,6 @@
+framework module Pods_ZwanzigAR {
+  umbrella header "Pods-ZwanzigAR-umbrella.h"
+
+  export *
+  module * { export * }
+}

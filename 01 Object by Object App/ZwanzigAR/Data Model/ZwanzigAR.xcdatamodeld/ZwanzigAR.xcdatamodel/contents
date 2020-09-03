@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17189" systemVersion="20A5354i" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Asset" representedClassName="ZwanzigAR.Asset" syncable="YES">
+        <attribute name="assetDescription" optional="YES" attributeType="String"/>
+        <attribute name="createdAt" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="fileName" optional="YES" attributeType="String"/>
+        <attribute name="fileType" optional="YES" attributeType="String"/>
+        <attribute name="height" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="id" attributeType="String"/>
+        <attribute name="internetMediaType" optional="YES" attributeType="String"/>
+        <attribute name="localeCode" optional="YES" attributeType="String"/>
+        <attribute name="size" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+        <attribute name="updatedAt" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="urlString" optional="YES" attributeType="String"/>
+        <attribute name="width" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <relationship name="clueObjectMediaInverse" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ClueObject" inverseName="mediaSet" inverseEntity="ClueObject"/>
+        <relationship name="hintImageInverse" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Portal" inverseName="hintImage" inverseEntity="Portal"/>
+        <relationship name="logoInverse" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Institution" inverseName="logo" inverseEntity="Institution"/>
+        <relationship name="mapFileInverse" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="WorldMap" inverseName="mapFile" inverseEntity="WorldMap"/>
+        <relationship name="objectMediaInverse" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Object" inverseName="mediaSet" inverseEntity="Object"/>
+        <relationship name="portalTeaserImageInverse" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Portal" inverseName="teaserImage" inverseEntity="Portal"/>
+        <relationship name="storyTeaserImageInverse" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Story" inverseName="teaserImage" inverseEntity="Story"/>
+    </entity>
+    <entity name="ClueObject" representedClassName="ZwanzigAR.ClueObject" syncable="YES">
+        <attribute name="createdAt" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="id" attributeType="String"/>
+        <attribute name="localeCode" optional="YES" attributeType="String"/>
+        <attribute name="title" attributeType="String"/>
+        <attribute name="updatedAt" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <relationship name="entryClueObjectInverse" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Story" inverseName="entryClueObject" inverseEntity="Story"/>
+        <relationship name="hostedClueObjectInverse" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Portal" inverseName="hostedClueObject" inverseEntity="Portal"/>
+        <relationship name="mediaSet" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Asset" inverseName="clueObjectMediaInverse" inverseEntity="Asset"/>
+    </entity>
+    <entity name="Game" representedClassName="ZwanzigAR.Game" syncable="YES">
+        <attribute name="createdAt" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="id" attributeType="String"/>
+        <attribute name="localeCode" optional="YES" attributeType="String"/>
+        <attribute name="persistentARIntroCompleted" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <attribute name="persistentBoardIntroCompleted" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <attribute name="persistentClueObjectSwipeIntroCompleted" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <attribute name="persistentIntroCompleted" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <attribute name="title" attributeType="String"/>
+        <attribute name="updatedAt" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <relationship name="storySet" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Story" inverseName="game" inverseEntity="Story"/>
+    </entity>
+    <entity name="Institution" representedClassName="ZwanzigAR.Institution" syncable="YES">
+        <attribute name="address" optional="YES" attributeType="Transformable" valueTransformerName="NSSecureUnarchiveFromData"/>
+        <attribute name="createdAt" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="id" attributeType="String"/>
+        <attribute name="localeCode" optional="YES" attributeType="String"/>
+        <attribute name="title" attributeType="String"/>
+        <attribute name="updatedAt" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="url" optional="YES" attributeType="String"/>
+        <relationship name="institutionInverse" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Object" inverseName="institution" inverseEntity="Object"/>
+        <relationship name="logo" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Asset" inverseName="logoInverse" inverseEntity="Asset"/>
+    </entity>
+    <entity name="Object" representedClassName="ZwanzigAR.Object" syncable="YES">
+        <attribute name="anchorAlignmentString" optional="YES" attributeType="String"/>
+        <attribute name="clearedForSharing" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="containerTypeString" optional="YES" attributeType="String"/>
+        <attribute name="createdAt" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="fragmentation" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="id" attributeType="String"/>
+        <attribute name="localeCode" optional="YES" attributeType="String"/>
+        <attribute name="longDimension" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="persistentState" optional="YES" attributeType="String"/>
+        <attribute name="title" attributeType="String"/>
+        <attribute name="updatedAt" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <relationship name="institution" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Institution" inverseName="institutionInverse" inverseEntity="Institution"/>
+        <relationship name="mediaSet" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Asset" inverseName="objectMediaInverse" inverseEntity="Asset"/>
+        <relationship name="objectStory" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="TextObject" inverseName="objectStoryInverse" inverseEntity="TextObject"/>
+        <relationship name="portalSet" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Portal" inverseName="objectSet" inverseEntity="Portal"/>
+    </entity>
+    <entity name="Portal" representedClassName="ZwanzigAR.Portal" syncable="YES">
+        <attribute name="createdAt" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="hintText" optional="YES" attributeType="String"/>
+        <attribute name="hostedNavigationToolString" optional="YES" attributeType="String"/>
+        <attribute name="id" attributeType="String"/>
+        <attribute name="localeCode" optional="YES" attributeType="String"/>
+        <attribute name="location" optional="YES" attributeType="Transformable" valueTransformerName=""/>
+        <attribute name="persistentCurrentNavigationToolString" optional="YES" attributeType="String"/>
+        <attribute name="persistentHostedNavigationToolState" optional="YES" attributeType="String"/>
+        <attribute name="persistentPortalStoryState" optional="YES" attributeType="String"/>
+        <attribute name="persistentState" optional="YES" attributeType="String"/>
+        <attribute name="title" attributeType="String"/>
+        <attribute name="updatedAt" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <relationship name="hintImage" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Asset" inverseName="hintImageInverse" inverseEntity="Asset"/>
+        <relationship name="hostedClueObject" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ClueObject" inverseName="hostedClueObjectInverse" inverseEntity="ClueObject"/>
+        <relationship name="objectSet" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Object" inverseName="portalSet" inverseEntity="Object"/>
+        <relationship name="portalStory" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="TextObject" inverseName="portalStoryInverse" inverseEntity="TextObject"/>
+        <relationship name="story" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Story" inverseName="portalSet" inverseEntity="Story"/>
+        <relationship name="teaserImage" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Asset" inverseName="portalTeaserImageInverse" inverseEntity="Asset"/>
+        <relationship name="worldMapSet" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="WorldMap" inverseName="worldMapsInverse" inverseEntity="WorldMap"/>
+    </entity>
+    <entity name="Story" representedClassName="ZwanzigAR.Story" syncable="YES">
+        <attribute name="colorString" optional="YES" attributeType="String"/>
+        <attribute name="createdAt" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="entryNavigationToolString" optional="YES" attributeType="String"/>
+        <attribute name="id" attributeType="String"/>
+        <attribute name="localeCode" optional="YES" attributeType="String"/>
+        <attribute name="persistentEntryNavigationToolState" optional="YES" attributeType="String"/>
+        <attribute name="persistentLastSelectedAt" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="teaserText" optional="YES" attributeType="String"/>
+        <attribute name="title" attributeType="String"/>
+        <attribute name="tourDuration" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="updatedAt" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <relationship name="conclusion" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="TextObject" inverseName="conclusionInverse" inverseEntity="TextObject"/>
+        <relationship name="entryClueObject" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ClueObject" inverseName="entryClueObjectInverse" inverseEntity="ClueObject"/>
+        <relationship name="game" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Game" inverseName="storySet" inverseEntity="Game"/>
+        <relationship name="introduction" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="TextObject" inverseName="introductionInverse" inverseEntity="TextObject"/>
+        <relationship name="portalSet" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Portal" inverseName="story" inverseEntity="Portal"/>
+        <relationship name="teaserImage" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Asset" inverseName="storyTeaserImageInverse" inverseEntity="Asset"/>
+    </entity>
+    <entity name="SyncInfo" representedClassName="ZwanzigAR.SyncInfo" syncable="YES">
+        <attribute name="syncToken" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="TextObject" representedClassName="ZwanzigAR.TextObject" syncable="YES">
+        <attribute name="createdAt" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="id" attributeType="String"/>
+        <attribute name="localeCode" optional="YES" attributeType="String"/>
+        <attribute name="phoneticTranscript" optional="YES" attributeType="String"/>
+        <attribute name="text" attributeType="String"/>
+        <attribute name="updatedAt" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <relationship name="conclusionInverse" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Story" inverseName="conclusion" inverseEntity="Story"/>
+        <relationship name="introductionInverse" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Story" inverseName="introduction" inverseEntity="Story"/>
+        <relationship name="objectStoryInverse" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Object" inverseName="objectStory" inverseEntity="Object"/>
+        <relationship name="portalStoryInverse" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Portal" inverseName="portalStory" inverseEntity="Portal"/>
+    </entity>
+    <entity name="WorldMap" representedClassName="ZwanzigAR.WorldMap" syncable="YES">
+        <attribute name="createdAt" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="id" attributeType="String"/>
+        <attribute name="localeCode" optional="YES" attributeType="String"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+        <attribute name="updatedAt" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <relationship name="mapFile" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Asset" inverseName="mapFileInverse" inverseEntity="Asset"/>
+        <relationship name="worldMapsInverse" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Portal" inverseName="worldMapSet" inverseEntity="Portal"/>
+    </entity>
+    <elements>
+        <element name="Asset" positionX="0" positionY="0" width="128" height="329"/>
+        <element name="ClueObject" positionX="0" positionY="0" width="128" height="163"/>
+        <element name="Game" positionX="9" positionY="144" width="128" height="193"/>
+        <element name="Institution" positionX="0" positionY="0" width="128" height="178"/>
+        <element name="Object" positionX="0" positionY="0" width="128" height="254"/>
+        <element name="Portal" positionX="0" positionY="0" width="128" height="328"/>
+        <element name="Story" positionX="0" positionY="0" width="128" height="284"/>
+        <element name="SyncInfo" positionX="0" positionY="0" width="128" height="58"/>
+        <element name="TextObject" positionX="0" positionY="0" width="128" height="193"/>
+        <element name="WorldMap" positionX="0" positionY="0" width="128" height="148"/>
+    </elements>
+</model>

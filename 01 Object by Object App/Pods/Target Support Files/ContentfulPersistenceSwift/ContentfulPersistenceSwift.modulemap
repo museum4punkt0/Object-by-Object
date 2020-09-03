@@ -1,0 +1,6 @@
+framework module ContentfulPersistence {
+  umbrella header "ContentfulPersistenceSwift-umbrella.h"
+
+  export *
+  module * { export * }
+}

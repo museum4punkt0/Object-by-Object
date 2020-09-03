@@ -1,0 +1,23 @@
+PODS:
+  - Contentful (4.1.3):
+    - Contentful/ImageOptions (= 4.1.3)
+  - Contentful/ImageOptions (4.1.3)
+  - ContentfulPersistenceSwift (0.13.0):
+    - Contentful (~> 4.1.0)
+
+DEPENDENCIES:
+  - Contentful
+  - ContentfulPersistenceSwift (~> 0.13.0)
+
+SPEC REPOS:
+  trunk:
+    - Contentful
+    - ContentfulPersistenceSwift
+
+SPEC CHECKSUMS:
+  Contentful: adb1e999e7c223615d84c00ad9556941b40df563
+  ContentfulPersistenceSwift: 34dcc378e015a732b2595e9f6a4e5dcd47e4fe21
+
+PODFILE CHECKSUM: 1a88aeac336d4bb4e4155d1ec344d7087530a775
+
+COCOAPODS: 1.9.1

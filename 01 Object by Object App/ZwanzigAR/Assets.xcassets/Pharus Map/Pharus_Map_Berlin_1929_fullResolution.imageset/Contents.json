@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "Pharus_Map_Berlin_1929_fullResolution.jpg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

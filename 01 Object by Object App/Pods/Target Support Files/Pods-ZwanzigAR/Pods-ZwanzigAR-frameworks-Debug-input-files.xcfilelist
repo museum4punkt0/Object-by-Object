@@ -1,0 +1,3 @@
+${PODS_ROOT}/Target Support Files/Pods-ZwanzigAR/Pods-ZwanzigAR-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Contentful/Contentful.framework
+${BUILT_PRODUCTS_DIR}/ContentfulPersistenceSwift/ContentfulPersistence.framework
