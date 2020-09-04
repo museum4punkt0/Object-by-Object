@@ -1,8 +1,10 @@
 # Object-by-Object
 
-Auf den Spuren der Zwanziger in Berlin
+__Auf den Spuren der Zwanziger in Berlin__
 
 __Object by Object__ ist ein Schnitzeljagd-Spiel für iOS-Geräte, das im öffentlichen Raum mit Hilfe von Persistent Augmented Reality (Persistent AR) gespielt werden kann.
+
+## Dokumentation
 
 Vollständige Dokumentation [&#8594;](https://ekkip.github.io/zwanzig-ar-doc/)
 
