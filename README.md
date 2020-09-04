@@ -6,7 +6,7 @@ __Object by Object__ ist ein Schnitzeljagd-Spiel für iOS-Geräte, das im öffen
 
 ## Dokumentation
 
-Vollständige Dokumentation [&#8594;](https://ekkip.github.io/zwanzig-ar-doc/)
+[Vollständige Dokumentation &#8594;](https://ekkip.github.io/zwanzig-ar-doc/)
 
 
 ## Credits
