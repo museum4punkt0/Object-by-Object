@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<script src="https://unpkg.com/contentful-ui-extensions-sdk@3"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.1.6/zepto.js"></script>
+<link rel="stylesheet" type="text/css" href="https://contentful.github.io/ui-extensions-sdk/cf-extension.css">
+
+<select id="enum-selector" class="cf-form-input" style="border: 1px solid #d3dce0">
+  <option value="1" selected>None</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+</select>
+
+
+<script>
+window.contentfulExtension.init(function(api) {
+  var fieldValue = api.field.getValue();
+  console.log('Saved fragmentation value: ' + fieldValue);
+
+  if (typeof fieldValue !== 'undefined') {
+		$('#enum-selector option[value="' + fieldValue + '"]').prop('selected', true);
+  }
+
+  $('#enum-selector').change(function() {
+    console.log($(this).val());
+    api.field.setValue(parseInt($(this).val()));
+	}).change();
+
+});
+</script>

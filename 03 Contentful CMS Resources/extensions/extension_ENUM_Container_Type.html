@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<script src="https://unpkg.com/contentful-ui-extensions-sdk@3"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.1.6/zepto.js"></script>
+<link rel="stylesheet" type="text/css" href="https://contentful.github.io/ui-extensions-sdk/cf-extension.css">
+
+<select id="enum-selector" class="cf-form-input" style="border: 1px solid #d3dce0">
+  <option value="selfContained" selected>Self-contained</option>
+  <option value="paper">Paper</option>
+  <option value="pictureFrame">Picture Frame</option>
+  <option value="cameraOnTripod">Camera on Tripod</option>
+  <option value="gramophone">Gramophone</option>
+  <option value="film">Film</option>
+  <option value="slideProjector">Slide Projector</option>
+  <option value="slideProjectorWithScreen">Slide Projector with Screen</option>
+</select>
+
+
+<script>
+window.contentfulExtension.init(function(api) {
+  var fieldValue = api.field.getValue();
+  console.log(fieldValue);
+
+  if (typeof fieldValue !== 'undefined') {
+		$('#enum-selector option[value=' + fieldValue + ']').prop('selected', true);
+  }
+
+  $('#enum-selector').change(function() {
+    api.field.setValue($(this).val());
+	}).change();
+
+});
+</script>
