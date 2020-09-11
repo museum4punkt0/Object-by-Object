@@ -2,7 +2,10 @@
 
 __Auf den Spuren der Zwanziger in Berlin__
 
-__Object by Object__ ist ein Schnitzeljagd-Spiel für iOS-Geräte, das im öffentlichen Raum mit Hilfe von Persistent Augmented Reality (Persistent AR) gespielt werden kann.
+__Object by Object - Auf den Spuren der Zwanziger in Berlin__ ist ein Schnitzeljagd-Spiel für iOS-Geräte, das im öffentlichen Raum mit Hilfe von Persistent Augmented Reality (Persistent AR) gespielt werden kann. </br>
+
+Diese AR-Anwendung ist entstanden im Verbundprojekt museum4punkt0 – Digitale Strategien für das Museum der Zukunft, Teilprojekt Zentrale wissenschaftliche Projektsteuerung. Weitere Informationen: www.museum4punkt0.de </br>
+Das Projekt museum4punkt0 wird gefördert durch die Beauftragte der Bundesregierung für Kultur und Medien aufgrund eines Beschlusses des Deutschen Bundestages. </br>
 
 ## Dokumentation
 
@@ -11,4 +14,18 @@ __Object by Object__ ist ein Schnitzeljagd-Spiel für iOS-Geräte, das im öffen
 
 ## Credits
 
-2020 [Stiftung Preußischer Kulturbesitz](https://www.preussischer-kulturbesitz.de), [museum4punkt0](https://www.museum4punkt0.de), Ekkehard Petzold, Jan Alexander
+2020 [Stiftung Preußischer Kulturbesitz](https://www.preussischer-kulturbesitz.de), [museum4punkt0](https://www.museum4punkt0.de), Ekkehard Petzold, Jan Alexander </br>
+
+## Lizenz
+
+Copyright (c) 2020 / museum4punkt0, Ekkehard Petzold, Jan Alexander
+
+Die in diesem Repositorium veröffentlichte Anwendung wird unter der MIT Lizenz veröffentlicht. Näheres siehe in der Lizenz-Datei.
+
+Sämtliche verwendete Programmteile Dritter stehen unter der MIT-Lizenz: </br>
+
+* contentful.swift von Contentful GmbH: https://github.com/contentful/contentful.swift </br>
+* contentful-persistence.swift von Contentful GmbH: https://github.com/contentful/contentful-persistence.swift </br>
+* SwiftLint von Realm Inc: https://github.com/realm/SwiftLint </br>
+ 
+
