@@ -14,7 +14,7 @@ Das Projekt museum4punkt0 wird gefördert durch die Beauftragte der Bundesregier
 
 ## Credits
 
-2020 [Stiftung Preußischer Kulturbesitz](https://www.preussischer-kulturbesitz.de), [museum4punkt0](https://www.museum4punkt0.de), Ekkehard Petzold, Jan Alexander </br>
+[Stiftung Preußischer Kulturbesitz](https://www.preussischer-kulturbesitz.de), [museum4punkt0](https://www.museum4punkt0.de), Ekkehard Petzold, Jan Alexander </br>
 
 ## Lizenz
 
