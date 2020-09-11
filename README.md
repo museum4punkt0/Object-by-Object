@@ -20,7 +20,7 @@ Das Projekt museum4punkt0 wird gefördert durch die Beauftragte der Bundesregier
 
 Copyright (c) 2020 / museum4punkt0, Ekkehard Petzold, Jan Alexander
 
-Die in diesem Repositorium veröffentlichte Anwendung wird unter der MIT Lizenz veröffentlicht. Näheres siehe in der Lizenz-Datei.
+Die in diesem Repositorium veröffentlichte Anwendung wird unter der MIT Lizenz veröffentlicht. [Näheres siehe in der Lizenz-Datei;](https://github.com/museum4punkt0/Object-by-Object/blob/master/LICENSE)
 
 Sämtliche verwendete Programmteile Dritter stehen unter der MIT-Lizenz: </br>
 
