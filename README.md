@@ -4,7 +4,7 @@ __Auf den Spuren der Zwanziger in Berlin__
 
 __Object by Object - Auf den Spuren der Zwanziger in Berlin__ ist ein Schnitzeljagd-Spiel für iOS-Geräte, das im öffentlichen Raum mit Hilfe von Persistent Augmented Reality (Persistent AR) gespielt werden kann. </br>
 
-Diese AR-Anwendung ist entstanden im Verbundprojekt museum4punkt0 – Digitale Strategien für das Museum der Zukunft, Teilprojekt Zentrale wissenschaftliche Projektsteuerung. Weitere Informationen: www.museum4punkt0.de </br>
+Diese AR-Anwendung ist entstanden im Verbundprojekt museum4punkt0 – Digitale Strategien für das Museum der Zukunft, Teilprojekt Zentrale wissenschaftliche Projektsteuerung. Weitere Informationen: www.museum4punkt0.de </br></br>
 Das Projekt museum4punkt0 wird gefördert durch die Beauftragte der Bundesregierung für Kultur und Medien aufgrund eines Beschlusses des Deutschen Bundestages. </br>
 
 ## Dokumentation
