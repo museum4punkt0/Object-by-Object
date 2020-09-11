@@ -23,7 +23,7 @@ Copyright (c) 2020 / museum4punkt0, Ekkehard Petzold, Jan Alexander
 
 Die in diesem Repositorium veröffentlichte Anwendung wird unter der MIT Lizenz veröffentlicht. Näheres siehe in der [Lizenz-Datei.](https://github.com/museum4punkt0/Object-by-Object/blob/master/LICENSE)
 
-Sämtliche verwendete Programmteile Dritter stehen unter der MIT-Lizenz: </br>
+Sämtliche verwendete Programmteile Dritter sind nachfolgend aufgeführt und stehen unter der MIT-Lizenz: </br>
 
 * contentful.swift von Contentful GmbH: https://github.com/contentful/contentful.swift </br>
 * contentful-persistence.swift von Contentful GmbH: https://github.com/contentful/contentful-persistence.swift </br>
