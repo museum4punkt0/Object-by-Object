@@ -284,6 +284,7 @@
 		694D770423549AB90035E036 /* PortalEditor */ = {
 			isa = PBXGroup;
 			children = (
+				69DD847A2567DA740057F075 /* CMS-Credentials.plist */,
 				694D770523549AB90035E036 /* AppDelegate.swift */,
 				B502D8EB23FD8988001B3341 /* RootViewController.swift */,
 				B586366B2437867D002D8AA4 /* Mission Board */,
@@ -384,7 +385,6 @@
 		B5CE75FE24093E100069A427 /* Contentful */ = {
 			isa = PBXGroup;
 			children = (
-				69DD847A2567DA740057F075 /* CMS-Credentials.plist */,
 				B5CE7601240976D30069A427 /* ContentfulManager.swift */,
 				B5CE75FF24093E290069A427 /* Client.swift */,
 				69775CF324223B0900502DB5 /* ContentfulUpdateViewController.swift */,

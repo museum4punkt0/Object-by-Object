@@ -63,6 +63,7 @@
 		69D37CA124800A1C00831048 /* ZwanzigAR.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 69D37C9F24800A1C00831048 /* ZwanzigAR.xcdatamodeld */; };
 		69D37CA824802EA000831048 /* Institution.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D37CA724802EA000831048 /* Institution.swift */; };
 		69DCDBAD2493F9100028EDC3 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DCDBAC2493F90F0028EDC3 /* Game.swift */; };
+		69DD84932567E9B30057F075 /* CMS-Credentials.plist in Resources */ = {isa = PBXBuildFile; fileRef = 69DD84922567E9B30057F075 /* CMS-Credentials.plist */; };
 		69E6B98E24B341F900A6C9C1 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E6B98D24B341F900A6C9C1 /* UIImageView.swift */; };
 		B5118DE124A4A1CB005BC1CA /* PortalHeaderImageSectionEmpty.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5118DE024A4A1CB005BC1CA /* PortalHeaderImageSectionEmpty.swift */; };
 		B5118DE324A4A20C005BC1CA /* PortalHeaderSectionEmpty.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5118DE224A4A20C005BC1CA /* PortalHeaderSectionEmpty.swift */; };
@@ -190,6 +191,7 @@
 		69D37CA024800A1C00831048 /* ZwanzigAR.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ZwanzigAR.xcdatamodel; sourceTree = "<group>"; };
 		69D37CA724802EA000831048 /* Institution.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Institution.swift; sourceTree = "<group>"; };
 		69DCDBAC2493F90F0028EDC3 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		69DD84922567E9B30057F075 /* CMS-Credentials.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "CMS-Credentials.plist"; sourceTree = "<group>"; };
 		69E6B98D24B341F900A6C9C1 /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
 		B5118DE024A4A1CB005BC1CA /* PortalHeaderImageSectionEmpty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortalHeaderImageSectionEmpty.swift; sourceTree = "<group>"; };
 		B5118DE224A4A20C005BC1CA /* PortalHeaderSectionEmpty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortalHeaderSectionEmpty.swift; sourceTree = "<group>"; };
@@ -425,6 +427,7 @@
 		B52EF20F247D62A40026B2B2 /* ZwanzigAR */ = {
 			isa = PBXGroup;
 			children = (
+				69DD84922567E9B30057F075 /* CMS-Credentials.plist */,
 				B52EF210247D62A40026B2B2 /* AppDelegate.swift */,
 				B52EF212247D62A40026B2B2 /* SceneDelegate.swift */,
 				69D37CA22480299000831048 /* Data Model */,
@@ -692,6 +695,7 @@
 				B52EF252247D64B40026B2B2 /* JosefinSans-SemiBoldItalic.ttf in Resources */,
 				69ADBF16248681BD007D3F3B /* art.scnassets in Resources */,
 				B52EF21D247D62A60026B2B2 /* LaunchScreen.storyboard in Resources */,
+				69DD84932567E9B30057F075 /* CMS-Credentials.plist in Resources */,
 				B52EF24F247D64B40026B2B2 /* JosefinSans-LightItalic.ttf in Resources */,
 				697B66A9248676DA00B7BD69 /* portalInside.plist in Resources */,
 				B52EF24C247D64B40026B2B2 /* JosefinSans-BoldItalic.ttf in Resources */,
@@ -998,7 +1002,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = V9M3FX97AT;
 				INFOPLIST_FILE = ZwanzigAR/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1018,7 +1022,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = V9M3FX97AT;
 				INFOPLIST_FILE = ZwanzigAR/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (

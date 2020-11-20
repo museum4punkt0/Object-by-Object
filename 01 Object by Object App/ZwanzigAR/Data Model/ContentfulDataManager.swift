@@ -4,6 +4,11 @@ import ContentfulPersistence
 //import Keys
 
 class ContentfulDataManager {
+	struct Constants {
+		static let credentialsFilename = "CMS-Credentials"
+		static let credentialsDictSpaceId = "spaceId"
+		static let credentialsDictAccessToken = "accessToken"
+	}
 
 	static let shared = ContentfulDataManager()
 	
@@ -59,7 +64,15 @@ class ContentfulDataManager {
         self.coreDataStore = coreDataStore
 		
 		// Delivery API
-		client = Client(spaceId: "____________", accessToken: "___________________________________________")
+		guard
+			let url = Bundle.main.url(forResource: Constants.credentialsFilename, withExtension: "plist"),
+			let dict = NSDictionary(contentsOf: url) as? [String: String],
+			let spaceId = dict[Constants.credentialsDictSpaceId],
+			let accessToken = dict[Constants.credentialsDictAccessToken]
+		else {
+			fatalError()
+		}
+		client = Client(spaceId: spaceId, accessToken: accessToken)
 		
 		let contentfulSynchronizer = SynchronizationManager(client: client,
                                                             localizationScheme: .default,
