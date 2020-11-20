@@ -26,7 +26,6 @@
 		694D773E2354BEA70035E036 /* glow.plist in Resources */ = {isa = PBXBuildFile; fileRef = 694D773C2354BEA60035E036 /* glow.plist */; };
 		694D77422354C2D30035E036 /* SceneFilterTechnique.metal in Sources */ = {isa = PBXBuildFile; fileRef = 694D77402354C2D30035E036 /* SceneFilterTechnique.metal */; };
 		694D77432354C2D30035E036 /* SceneFilterTechnique.plist in Resources */ = {isa = PBXBuildFile; fileRef = 694D77412354C2D30035E036 /* SceneFilterTechnique.plist */; };
-		69609E5B237EE06100B5E27C /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 69609E5A237EE06100B5E27C /* .swiftlint.yml */; };
 		69775CF424223B0900502DB5 /* ContentfulUpdateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69775CF324223B0900502DB5 /* ContentfulUpdateViewController.swift */; };
 		699906FB247D2AFE007DB673 /* CFStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699906FA247D2AFE007DB673 /* CFStory.swift */; };
 		699906FD247D2D93007DB673 /* CFPortal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699906FC247D2D93007DB673 /* CFPortal.swift */; };
@@ -40,6 +39,7 @@
 		6999273E235E398200A83FFB /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6999273D235E398200A83FFB /* Utilities.swift */; };
 		69B34BA4243A1635004AD7AA /* Contentful Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B34BA3243A1635004AD7AA /* Contentful Extensions.swift */; };
 		69CC8A8C244F860A005C3FF6 /* WorldMapDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CC8A87244F860A005C3FF6 /* WorldMapDetailsViewController.swift */; };
+		69DD847B2567DA740057F075 /* CMS-Credentials.plist in Resources */ = {isa = PBXBuildFile; fileRef = 69DD847A2567DA740057F075 /* CMS-Credentials.plist */; };
 		69F7DBD5235F789000A74C87 /* portalInsideORIG.plist in Resources */ = {isa = PBXBuildFile; fileRef = 69F7DBD4235F789000A74C87 /* portalInsideORIG.plist */; };
 		8BEA060D8F5B8B195D7DFBB5 /* Pods_PortalEditorUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F9C646E48D1CF0110C8852A /* Pods_PortalEditorUITests.framework */; };
 		9808783C706E9D4954FB324E /* Pods_PortalEditor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42CBCF148E8A55CE9D3BD12B /* Pods_PortalEditor.framework */; };
@@ -123,7 +123,6 @@
 		694D773C2354BEA60035E036 /* glow.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = glow.plist; sourceTree = "<group>"; };
 		694D77402354C2D30035E036 /* SceneFilterTechnique.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = SceneFilterTechnique.metal; sourceTree = "<group>"; };
 		694D77412354C2D30035E036 /* SceneFilterTechnique.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SceneFilterTechnique.plist; sourceTree = "<group>"; };
-		69609E5A237EE06100B5E27C /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = SOURCE_ROOT; };
 		69775CF324223B0900502DB5 /* ContentfulUpdateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentfulUpdateViewController.swift; sourceTree = "<group>"; };
 		699906FA247D2AFE007DB673 /* CFStory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CFStory.swift; sourceTree = "<group>"; };
 		699906FC247D2D93007DB673 /* CFPortal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CFPortal.swift; sourceTree = "<group>"; };
@@ -137,6 +136,7 @@
 		6999273D235E398200A83FFB /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		69B34BA3243A1635004AD7AA /* Contentful Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Contentful Extensions.swift"; sourceTree = "<group>"; };
 		69CC8A87244F860A005C3FF6 /* WorldMapDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorldMapDetailsViewController.swift; sourceTree = "<group>"; };
+		69DD847A2567DA740057F075 /* CMS-Credentials.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CMS-Credentials.plist"; sourceTree = "<group>"; };
 		69F7DBD4235F789000A74C87 /* portalInsideORIG.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = portalInsideORIG.plist; sourceTree = "<group>"; };
 		A2EE7B7271824587B6AC4F1C /* Pods_PortalEditorTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PortalEditorTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B502D8EB23FD8988001B3341 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
@@ -300,7 +300,6 @@
 				694D770E23549ABA0035E036 /* Assets.xcassets */,
 				B572E75D243223AB007B554F /* noise.png */,
 				694D771323549ABA0035E036 /* Info.plist */,
-				69609E5A237EE06100B5E27C /* .swiftlint.yml */,
 			);
 			path = PortalEditor;
 			sourceTree = "<group>";
@@ -385,6 +384,7 @@
 		B5CE75FE24093E100069A427 /* Contentful */ = {
 			isa = PBXGroup;
 			children = (
+				69DD847A2567DA740057F075 /* CMS-Credentials.plist */,
 				B5CE7601240976D30069A427 /* ContentfulManager.swift */,
 				B5CE75FF24093E290069A427 /* Client.swift */,
 				69775CF324223B0900502DB5 /* ContentfulUpdateViewController.swift */,
@@ -540,7 +540,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				69609E5B237EE06100B5E27C /* .swiftlint.yml in Resources */,
 				6923A7232360A30E00E032AF /* portalOutside.plist in Resources */,
 				694D770823549AB90035E036 /* art.scnassets in Resources */,
 				6923A7292360B3E900E032AF /* portalInside.plist in Resources */,
@@ -550,6 +549,7 @@
 				694D771223549ABA0035E036 /* LaunchScreen.storyboard in Resources */,
 				694D770F23549ABA0035E036 /* Assets.xcassets in Resources */,
 				694D77432354C2D30035E036 /* SceneFilterTechnique.plist in Resources */,
+				69DD847B2567DA740057F075 /* CMS-Credentials.plist in Resources */,
 				694D773E2354BEA70035E036 /* glow.plist in Resources */,
 				69992735235DEC4900A83FFB /* NodeTechnique0.plist in Resources */,
 				694D773A23549AED0035E036 /* pixelate.plist in Resources */,
@@ -898,7 +898,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = V9M3FX97AT;
 				INFOPLIST_FILE = PortalEditor/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -917,7 +917,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = V9M3FX97AT;
 				INFOPLIST_FILE = PortalEditor/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
