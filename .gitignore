@@ -1,3 +1,5 @@
-
 01 Object by Object App/.DS_Store
 02 Portal Editor App/.DS_Store
+
+# Credentials cannot be uploaded
+**/CMS-Credentials.plist
