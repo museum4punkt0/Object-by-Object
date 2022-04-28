@@ -19,6 +19,19 @@ class RootViewController: UITabBarController, UITabBarControllerDelegate {
 		delegate = self
         ContentfulManager.shared.startedFetchingResources = self.startedFetchingResources
         ContentfulManager.shared.finishedFetchingResources = self.finishedFetchingResources
+        
+        if #available(iOS 15, *) {
+            let navBarAppearance = UINavigationBarAppearance()
+            navBarAppearance.configureWithDefaultBackground()
+            UINavigationBar.appearance().standardAppearance = navBarAppearance
+            UINavigationBar.appearance().scrollEdgeAppearance = navBarAppearance
+            
+            
+            let tabBarAppearance = UITabBarAppearance()
+            tabBarAppearance.configureWithDefaultBackground()
+            UITabBar.appearance().standardAppearance = tabBarAppearance
+            UITabBar.appearance().scrollEdgeAppearance = tabBarAppearance
+        }
 	}
 
 	required init?(coder: NSCoder) {
