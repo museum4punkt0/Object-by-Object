@@ -25,6 +25,7 @@ Das Projekt museum4punkt0 wird gefördert durch die Beauftragte der Bundesregier
 
 Auftraggeber: [Stiftung Preußischer Kulturbesitz](https://www.preussischer-kulturbesitz.de), [museum4punkt0](https://www.museum4punkt0.de)</br>
 Design und Programmierung: Ekkehard Petzold und Jan Alexander in Zusammenarbeit mit museum4punkt0 </br>
+Code und Dokumentation in diesem Repositorium wurden begutachtet durch TICE Software UG (haftungsbeschränkt) (https://tice.software/de/)
 
 ## Lizenz
 
