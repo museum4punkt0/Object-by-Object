@@ -20,6 +20,8 @@ Das Projekt museum4punkt0 wird gefördert durch die Beauftragte der Bundesregier
 
 [Vollständige Dokumentation &#8594;](https://ekkip.github.io/zwanzig-ar-doc/)
 
+Update: Um das Eintragen der API-Keys zu vereinfachen, sollten die in der Anleitung beschriebenen Credentials nicht mehr direkt im Code, sondern separat in der Datei 
+
 
 ## Credits
 
